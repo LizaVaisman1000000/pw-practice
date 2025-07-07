@@ -1,0 +1,113 @@
+{
+    "templates":
+    [
+        {
+            "id": "opening",
+            "image": "$image",
+            "tts": "$tts",
+            "transformation":[
+                {"effect": "e_zoompan:from_(x_1.0;y_0.4;zoom_1.5);to_(x_0.5;y_0.4;zoom_1.5)/c_scale,w_800;du_$duration"}
+            ]
+        },        
+        {
+            "id": "content-left",
+            "image": "$image",
+            "tts": "$tts",
+            "transformation":[
+                {"effect": "zoompan:mode_ztr;maxzoom_6.5;du_$duration"}
+            ]
+        },
+        {
+            "id": "content-right",
+            "image": "$image",
+            "tts": "$tts",
+            "transformation":[
+                {"effect": "zoompan:mode_ztr;maxzoom_6.5;du_$duration"}
+            ]
+        },
+        {
+            "id": "closing",
+            "image": "$image",
+            "tts": "$tts",
+            "transformation":[
+                {"effect": "zoompan:mode_ztr;maxzoom_6.5;du_$duration"}
+            ]
+        }
+    ],
+
+    "slides":
+    [
+        {
+            "variables": 
+            [
+                ["$image", "bestbuy/6556949cv11d_b7d47x"], 
+                ["$title", "World class product"],
+                ["$description", "3D Printing. So Easy. So Fun."],
+                ["$tts", "This is the most awseomone"],
+                ["$duration",3]
+            ],
+            "template":"opening"
+        },
+        {
+            "variables": 
+            [
+                ["$image", "bestbuy/6556949cv14d_w8d8yo"], 
+                ["$title", "Easy Multi-Device Control"],
+                ["$description", "Connect the 3D printer to your phone or laptop and gain full control over your creative projects."],
+                ["$tts", "User-Friendly App Interface"],
+                ["$duration",2]
+            ],
+            "template":"content-left"
+        },
+        {
+            "variables": 
+            [
+                ["$image", "bestbuy/6556949_rd_bowuzo"], 
+                ["$title", "Fast"],
+                ["$description", "500 mm/s High-Speed Printing, 35 mm Extrusion Flow, 0.12 mm Print Precision"],
+                ["$tts", "Delivering print speeds up to 10X faster (500 mm/s) than other 3D printers using default 50mm/s printing speeds, your models are completed in no time."],
+                ["$duration",2]
+            ],
+            "template":"content-right"
+        },
+        {
+            "variables": 
+            [
+                ["$image", "bestbuy/6556949ld_z209ho"], 
+                ["$title", "Easy Slicer Software"],
+                ["$description", "Slicing is made fuss-free and simple with easy mode, fast mode, and precision mode."],
+                ["$tts", "Slicing is made fuss-free and simple with easy mode, fast mode, and precision mode."],
+                ["$duration",2]
+            ],
+            "template":"content-left"
+        },
+        {
+            "variables": 
+            [
+                ["$image", "bestbuy/6556949cv15d_zhc4rp"], 
+                ["$title", "Enjoy Your Creation"],
+                ["$description", "Whether you're a DIY enthusiast, designer, or engineer the M5C 3D printer lets you confidently unleash your creativity."],
+                ["$tts", "Ideal for printing collectible items or missing parts, the AnkerMake M5C achieves 0.1 mm print precision. "],
+                ["$duration",2]
+            ],
+            "template":"content-right"
+        },
+        {
+            "variables": 
+            [
+                ["$image", "bestbuy/logo"],
+                ["$duration",2] 
+            ],
+            "template":"closing"
+        }
+    ],
+
+    "slideshow":
+    {
+            "transformation":
+            [
+            
+            ]
+        
+    }
+}

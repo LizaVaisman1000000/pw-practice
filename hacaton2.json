@@ -1,0 +1,107 @@
+{
+    "templates":
+        {
+            "opening": {
+                "image": "$background",
+                "tts": "$tts",
+                "raw_transformation":"l_$image_layer/e_zoompan:du_1.0;from_(x_1.0;y_0.4;zoom_1.5);to_(x_0.5;y_0.4;zoom_1.5)/c_scale,w_800/c_scale,h_500,w_500/fl_layer_apply,g_west,x_17/co_rgb:000000,l_text:arial_55_bold_normal_left:$title/fl_layer_apply,g_east,x_30/co_rgb:000000,l_text:arial_35_normal_left:$subtitle/fl_layer_apply,g_east,x_50,y_50/du_$duration/"
+             },        
+            "content-left": {
+                "video": "$background",
+                "tts": "$tts",
+                "raw_transformation":"l_$image_layer/c_scale,h_500,w_500/fl_layer_apply,g_west,x_17/co_rgb:000000,l_text:arial_30_bold_normal_left:$title/du_6.0/e_fade:2000/e_fade:-2000/fl_layer_apply,g_east,x_100,y_-50/co_rgb:000000,l_text:arial_20_normal_left:$subtitle/du_6.0/e_fade:2000/e_fade:-2000/fl_layer_apply,g_east,x_66,y_20/co_rgb:000000,l_text:arial_20_normal_left:$description/du_6.0/e_fade:2000/e_fade:-2000/fl_layer_apply,g_east,x_60,y_50/f_mp4/du_$duration/"
+            },
+            
+            "content-right": {
+                "video": "$background",
+                "tts": "$tts",
+                "raw_transformation":"l_$image_layer/c_scale,h_500,w_500/fl_layer_apply,g_east,x_17/co_rgb:000000,l_text:arial_30_bold_normal_left:$title/du_6.0/e_fade:2000/e_fade:-2000/fl_layer_apply,g_west,x_100,y_-50/co_rgb:000000,l_text:arial_20_normal_left:$subtitle/du_6.0/e_fade:2000/e_fade:-2000/fl_layer_apply,g_west,x_40,y_20/co_rgb:000000,l_text:arial_18_normal_left:$description/du_6.0/e_fade:2000/e_fade:-2000/fl_layer_apply,g_west,x_40,y_50/f_mp4/du_$duration/"
+            },
+            "closing": {
+                "image": "$image",
+                "raw_transformation":"e_zoompan:du_2.0;from_(x_1.0;y_0.4;zoom_1.5);to_(x_0.5;y_0.4;zoom_.5)/c_scale,w_800/f_mp4"
+             }
+        },
+
+    "slides":
+        [
+            {
+            "variables": [
+                {"$background": "bestbuy/white.mp4"},
+                {"$image_layer": "bestbuy:opening_image"},
+                {"$title": "World%20class%20product"},
+                {"$subtitle": "3D%20Printing.%20So%20Easy.%20So%20Fun!"},
+                {"$description": "Award winner of the CES 2025"},
+                {"$tts": "Introducing the award winner home 3D printer of the CES 2025.  So easy.  So fun."},
+                {"$duration": "10"}
+            ],
+            "template": "opening"
+            },
+            {
+                "variables": [
+                    {"$background": "bestbuy/white_vid.mp4"},
+                    {"$image_layer": "bestbuy:first_left"},
+                    {"$title": "Easy%20Multi-Device%20Control"},
+                    {"$subtitle": "Connect%20the%203D%20printer%20to%20your%20phone%20or%20laptop%20"},
+                    {"$description": "and%20gain%20full%20control%20over%20your%20creative%20projects."},
+                    {"$tts": "User-Friendly App Interface"},
+                    {"$duration": "10"}
+            ],
+            "template": "content-left"
+            },
+            {
+                "variables": [
+                    {"$background": "bestbuy/white_vid.mp4"},
+                    {"$image_layer": "bestbuy:2"},
+                    {"$title": "Fast"},
+                    {"$subtitle": "500%20mm%252Fs%20High-Speed%20Printing%252C%20"},
+                    {"$description": "35%20mm%20Extrusion%20Flow%252C%200.12%20mm%20Print%20Precision"},
+                    {"$tts": "Delivering print speeds up to 10X faster (500 mm/s) than other 3D printers using default 50mm/s printing speeds, your models are completed in no time."},
+                    {"$duration": "10"}
+            ],
+            "template": "content-right"
+            },
+            {
+                "variables": [
+                    {"$background": "bestbuy/white_vid.mp4"},
+                    {"$image_layer": "bestbuy:3"},
+                    {"$title": "Easy%20Slicer%20Software"},
+                    {"$subtitle": "Slicing%20is%20made%20fuss-free%20and%20simple%20with%20easy%20mode%252C%20"},
+                    {"$description": "fast%20mode%252C%20and%20precision%20mode."},
+                    {"$tts": "Slicing is made fuss-free and simple with easy mode, fast mode, and precision mode."},
+                    {"$duration": "10"}
+            ],
+            "template": "content-left"
+            },
+            {
+                "variables": [
+                    {"$background": "bestbuy/white_vid.mp4"},
+                    {"$image_layer": "bestbuy:4"},
+                    {"$title": "Enjoy%20Your%20Creation"},
+                    {"$subtitle": "Whether%20you're%20a%20DIY%20enthusiast%252C%20designer%252C%20or%20engineer%20"},
+                    {"$description": "the%20M5C%203D%20printer%20lets%20you%20confidently%20unleash%20your%20creativity."},
+                    {"$tts": "Ideal for printing collectible items or missing parts, the AnkerMake M5C achieves 0.1 mm print precision."},
+                    {"$duration": "10"}
+            ],
+            "template": "content-right"
+            },
+            {
+            "variables": [
+                {"$image": "bestbuy/logo"},
+                {"$duration": "2"}
+            ],
+            "template": "closing"
+            }
+        ],
+
+    "slideshow":
+    {
+            "width":"1110",
+            "height": "638",
+            "transformation":
+            [
+            
+            ]
+        
+    }
+}
